@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - EMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">EMS Admin</div>
+        <div class="nav-links">
+            <a href="dashboard_admin.html" class="active">Dashboard</a>
+            <a href="employees.jsp">Employees</a>
+            <a href="reports.jsp">Reports</a>
+            <a href="/api/auth?action=logout" class="btn-login" style="background: #ef4444;">Logout</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container" style="display: block; padding: 2rem 5%;">
+        <div class="dash-header">
+            <h2>Overview</h2>
+            <button class="btn-primary">+ Add Employee</button>
+        </div>
+
+        <div class="grid-stats">
+            <div class="stat-card">
+                <h3>42</h3>
+                <p>Total Employees</p>
+            </div>
+            <div class="stat-card">
+                <h3>38</h3>
+                <p>Present Today</p>
+            </div>
+            <div class="stat-card">
+                <h3>$124k</h3>
+                <p>Total Salaries</p>
+            </div>
+            <div class="stat-card">
+                <h3>4</h3>
+                <p>On Leave</p>
+            </div>
+        </div>
+
+        <div class="glass-card" style="width: 100%;">
+            <h3>Recent Activity</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Employee</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                            <th>Time In</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Full-Time</td>
+                            <td style="color: #4ade80;">Present</td>
+                            <td>09:00 AM</td>
+                            <td><button class="btn-secondary"
+                                    style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>Part-Time</td>
+                            <td style="color: #4ade80;">Present</td>
+                            <td>09:15 AM</td>
+                            <td><button class="btn-secondary"
+                                    style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

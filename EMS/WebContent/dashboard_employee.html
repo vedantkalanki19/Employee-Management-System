@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Dashboard - EMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">EMS Employee</div>
+        <div class="nav-links">
+            <a href="dashboard_employee.html" class="active">My Dashboard</a>
+            <a href="profile.jsp">Profile</a>
+            <a href="/api/auth?action=logout" class="btn-login" style="background: #ef4444;">Logout</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container" style="display: block; padding: 2rem 5%;">
+        <!-- Welcome Section -->
+        <div class="dash-header">
+            <h2>Welcome, <span id="empName">Employee</span></h2>
+            <div class="date-badge" style="background: var(--glass-bg); padding: 0.5rem 1rem; border-radius: 8px;">
+                <script>document.write(new Date().toDateString());</script>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid-stats">
+            <div class="stat-card">
+                <h3>95%</h3>
+                <p>Attendance</p>
+            </div>
+            <div class="stat-card">
+                <h3>$4,200</h3>
+                <p>Net Salary</p>
+            </div>
+            <div class="stat-card">
+                <h3>Full-Time</h3>
+                <p>Employment Type</p>
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <!-- Salary Slip Preview -->
+            <div class="glass-card" style="width: 100%;">
+                <h3>Recent Salary Slip</h3>
+                <div style="margin-top: 1rem;">
+                    <div class="stat-item">
+                        <span>Basic Pay</span>
+                        <span>$3,500</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Allowances</span>
+                        <span>$500</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Gross Salary</span>
+                        <span>$4,000</span>
+                    </div>
+                    <div class="stat-item" style="color: #ef4444;">
+                        <span>Deduction (5%)</span>
+                        <span>-$200</span>
+                    </div>
+                    <div class="stat-item" style="border-top: 1px solid #fff; margin-top: 0.5rem; padding-top: 0.5rem;">
+                        <span style="font-weight: bold; color: var(--primary-color);">Net Salary</span>
+                        <span style="font-weight: bold; color: var(--primary-color);">$3,800</span>
+                    </div>
+                    <button class="btn-primary" style="width: 100%; margin-top: 1rem;">Download Slip</button>
+                </div>
+            </div>
+
+            <!-- Attendance Marking -->
+            <div class="glass-card" style="width: 100%;">
+                <h3>Mark Attendance</h3>
+                <p style="color: #94a3b8; margin-bottom: 1rem;">Shift: 9:00 AM - 6:00 PM</p>
+                <div style="text-align: center; padding: 2rem;">
+                    <button class="btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">Check In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

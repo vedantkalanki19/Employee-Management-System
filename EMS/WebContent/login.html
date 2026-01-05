@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login - EMS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="form-box">
+            <h2>Welcome Back</h2>
+            <form action="/api/auth" method="POST">
+                <div class="form-group">
+                    <label>Role</label>
+                    <select name="role" id="role" onchange="toggleFields()">
+                        <option value="EMPLOYEE">Employee</option>
+                        <option value="ADMIN">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>ID / Username</label>
+                    <input type="text" name="username" placeholder="Enter ID or Username" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+            <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem; color: #94a3b8;">
+                New here? <a href="#" style="color: var(--primary-color);">Contact Admin</a>
+            </p>
+            <p style="margin-top: 0.5rem; text-align: center;">
+                <a href="index.html" style="font-size: 0.8rem;">Back to Home</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        function toggleFields() {
+            // Function to handle UI changes based on role
+        }
+    </script>
+</body>
+
+</html>
