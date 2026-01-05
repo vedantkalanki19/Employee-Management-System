@@ -30,12 +30,7 @@ This is a full-stack Employee Management System built with:
 ### 3. Deployment
 1.  Copy the generated `build` folder (or the `WebContent` folder if you didn't build classes physically) to your Tomcat `webapps` directory.
 2.  Rename the folder to `EMS`.
-3.  Start Tomcat: `startup.bat` (inside Tomcat/bin).
-
-## 🌐 Running the Website
-Once Tomcat is running, access the site here:
-
-👉 **[http://localhost:8080/EMS/index.html](http://localhost:8080/EMS/index.html)**
+3.  Start Tomcat: `startup.bat` (inside Tomcat/bin).
 
 ## 🔑 Default Login Credentials
 - **Admin**:
